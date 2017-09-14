@@ -86,17 +86,17 @@
                     <navigationItem key="navigationItem" title="CODER SWAG" id="wBF-YC-Usd"/>
                     <connections>
                         <outlet property="categoryTable" destination="uIy-wl-OX7" id="X25-xj-ZjF"/>
-                        <segue destination="0ay-tb-jme" kind="show" id="wXq-tx-4jD"/>
+                        <segue destination="0ay-tb-jme" kind="show" identifier="ProductsVC" id="wXq-tx-4jD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="477.60000000000002" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--ProductsVC-->
         <scene sceneID="NRj-fo-AIx">
             <objects>
-                <viewController id="0ay-tb-jme" sceneMemberID="viewController">
+                <viewController id="0ay-tb-jme" customClass="ProductsVC" customModule="coder_swag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h7t-qd-NhL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,7 +113,7 @@
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WIH-hN-T7g">
                                 <rect key="frame" x="0.0" y="71" width="375" height="532"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.81795247400000004" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VFM-Y2-lS8">
                                     <size key="itemSize" width="179" height="270"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -172,7 +172,7 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.81795247395833337" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="WIH-hN-T7g" firstAttribute="top" secondItem="TMM-uG-BzN" secondAttribute="bottom" constant="16" id="KvU-j7-yns"/>
                             <constraint firstItem="xmy-Yc-tkd" firstAttribute="trailing" secondItem="WIH-hN-T7g" secondAttribute="trailing" id="LwU-TK-TzB"/>
@@ -183,6 +183,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xmy-Yc-tkd"/>
                     </view>
+                    <connections>
+                        <outlet property="productsCollection" destination="WIH-hN-T7g" id="gH4-3U-TKe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q2n-6P-ULO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
